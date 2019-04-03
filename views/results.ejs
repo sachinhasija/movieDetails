@@ -1,0 +1,21 @@
+<link href="/style1.css" rel="stylesheet">
+<section class="container">
+<header class="header">
+    <h1 class="heading">Movies:</h1>
+</header>    
+<section class="movies">
+    <% data.Search.forEach(function(movie){ %>
+
+    <ul>
+        <li><strong><%= movie.Title %></strong>--<%= movie.Year %>--<%= movie.Type %>  </li>
+    </ul>
+<% }) %>
+
+</section>
+
+<section class="search">
+    <a href="/">Search Again</a>
+</section>
+
+
+</section>
